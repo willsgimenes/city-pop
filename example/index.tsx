@@ -1,12 +1,22 @@
 import 'react-app-polyfill/ie11';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import { Thing } from '../.';
+import ComponentHighlighter from "@willsgimenes/component-highlighter";
+
+const versions = { '@willsgimenes/marina': '1.0.3' };
 
 const App = () => {
   return (
     <div>
-      <Thing />
+      <ComponentHighlighter
+			active
+			versionMap={versions}
+			fullScopeName
+			style={{ width: 'fit-content', margin: 'auto', position: 'relative', top: '200px' }}
+			data-bit-id="@willsgimenes/marina"
+		>
+			<h1>hover me!</h1>
+		</ComponentHighlighter>
     </div>
   );
 };

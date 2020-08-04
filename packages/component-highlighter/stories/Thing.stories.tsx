@@ -1,10 +1,22 @@
+// @ts-ignore
 import React from 'react';
-import { Thing, Props } from '../src';
+
+import { ComponentHighlighter } from '../src/component-highlighter'
 
 export default {
   title: 'Welcome',
 };
 
-// By passing optional props to this story, you can control the props of the component when
-// you consume the story in a test.
-export const Default = (props?: Partial<Props>) => <Thing {...props} />;
+const versions = { '@willsgimenes/marina': '1.0.3' };
+
+export const Default = () => <div>
+  		<ComponentHighlighter
+			active={true}
+			versionMap={versions}
+			fullScopeName
+			style={{ width: 'fit-content', margin: 'auto', position: 'relative', top: '200px' }}
+			data-bit-id="@willsgimenes/marina"
+		>
+			<h1>hover me!</h1>
+		</ComponentHighlighter>
+</div>

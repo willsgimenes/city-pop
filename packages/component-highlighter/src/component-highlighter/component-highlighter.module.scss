@@ -1,0 +1,24 @@
+.componentHighlighter {
+	&.active.highlighting {
+		.tooltip {
+			display: block;
+		}
+
+		.border {
+			display: block;
+		}
+	}
+
+	.tooltip {
+		display: none;
+	}
+
+	.border {
+		display: none;
+	}
+}
+
+.link {
+	cursor: pointer;
+	text-decoration: none;
+}
