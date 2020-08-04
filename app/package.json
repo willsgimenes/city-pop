@@ -1,0 +1,28 @@
+{
+  "name": "@willsgimenes/city-pop-app",
+  "version": "0.1.0",
+  "private": true,
+  "description": "You should listen city pop",
+  "scripts": {
+    "dev": "node_modules/.bin/next dev",
+    "build": "node_modules/.bin/next build",
+    "start": "node_modules/.bin/next start",
+    "export": "node_modules/.bin/next export",
+    "deploy": "npm run build && npm run export"
+  },
+  "dependencies": {
+    "@willsgimenes/marina": "^0.0.0",
+    "@willsgimenes/plastic-love": "^0.0.0",
+    "commitizen": "^4.0.3",
+    "cz-conventional-changelog": "^3.0.2",
+    "lerna": "^3.20.2",
+    "next": "9.3.4",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
+  },
+  "devDependencies": {
+    "@types/node": "^13.11.0",
+    "@types/react": "^16.9.32",
+    "typescript": "^3.8.3"
+  }
+}

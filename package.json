@@ -1,0 +1,28 @@
+{
+  "name": "poppu",
+  "version": "1.0.0",
+  "description": "city pop project",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "app"
+  ],
+  "scripts": {
+    "test": "lerna run test",
+    "build:app": "lerna run build --scope=@willsgimenes/city-pop-app --stream",
+    "deploy:app": "lerna run deploy --scope=@willsgimenes/city-pop-app",
+    "build:packages": "lerna run build --ignore=willsgimenes/city-pop-app --stream"
+  },
+  "devDependencies": {
+    "lerna": "^3.22.1",
+    "commitizen": "^4.0.3",
+    "cz-conventional-changelog": "^3.0.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}

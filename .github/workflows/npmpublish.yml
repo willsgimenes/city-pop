@@ -1,0 +1,42 @@
+name: City pop
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  packages:
+    runs-on: ubuntu-latest
+    if: startsWith(github.event.head_commit.message, 'Merge')
+    steps:
+      - uses: actions/checkout@v1
+      - name: Configure CI Git User
+        run: |
+          git remote set-url origin https://${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+          git checkout master
+          git config --global user.name github-actions
+          git config --global user.email github-actions@github.com
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+          registry-url: https://registry.npmjs.org/
+      - name: Install dependencies
+        run: yarn
+      - name: Test packages
+        run: |
+          yarn lerna run test
+      - name: Build
+        run: |
+          yarn lerna run build
+      - name: Publish
+        run: |
+          GH_TOKEN=${GH_TOKEN}
+          NPM_TOKEN=${NPM_TOKEN}
+          echo "//registry.npmjs.org/:_authToken=${NPM_TOKEN}" > ./.npmrc
+          yarn lerna publish --yes
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
