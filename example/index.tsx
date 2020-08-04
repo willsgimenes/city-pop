@@ -1,7 +1,7 @@
 import 'react-app-polyfill/ie11';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import ComponentHighlighter from "@willsgimenes/component-highlighter";
+import ComponentHighlighter from "@willsgimenes/cosmo-clock-21";
 
 const versions = { '@willsgimenes/marina': '1.0.3' };
 

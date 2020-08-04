@@ -33,7 +33,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "@willsgimenes/component-highlighter",
+  "name": "@willsgimenes/cosmo-clock-21",
   "author": "willsgimenes",
   "module": "dist/component-highlighter.esm.js",
   "private": true,

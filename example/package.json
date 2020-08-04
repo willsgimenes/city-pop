@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "react-app-polyfill": "^1.0.0",
-    "@willsgimenes/component-highlighter": "^0.1.0"
+    "@willsgimenes/cosmo-clock-21": "^0.1.0"
   },
   "alias": {
     "react": "../node_modules/react",
