@@ -1,15 +1,5 @@
-@import '../../colors.module';
+@import "../../ui/colors.module";
 
 .scopeColorDefinition {
 	--scope-color-bg: #{$pink50};
-	
-	// &[data-current-scope="bit.evangelist"] {
-	// 	--scope-color-bg: #{$pink50};
-	// 	// --scope-color-bg: #{$p60};
-	// }
-
-	// &[data-current-scope="bit.base-ui"] {
-	// 	--scope-color-bg: #{$pink50};
-	// 	// --scope-color-bg: #{$g50};
-	// }
 }
