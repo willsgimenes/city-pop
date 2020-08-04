@@ -1,19 +1,19 @@
 import React from 'react';
-import { CardProps } from '../../card';
+import { CardProps } from '../../../ui/card';
 
 export type DuoComponentBubbleProps = {
-	bitId: String;
+	packageId: String;
 	fullScopeName?: boolean;
 	version?: String,
 } & CardProps;
 
 export type ScopeBubbleProps = {
-	bitId: String;
+	packageId: String;
 	fullScopeName?: boolean;
 	version?: String,
 } & React.AnchorHTMLAttributes<HTMLAnchorElement>;
 
 export type ComponentBubbleProps = {
-	bitId: String;
+	packageId: String;
 	version?: String;
 } & React.AnchorHTMLAttributes<HTMLAnchorElement>;

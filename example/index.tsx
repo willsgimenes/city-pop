@@ -13,7 +13,7 @@ const App = () => {
 			versionMap={versions}
 			fullScopeName
 			style={{ width: 'fit-content', margin: 'auto', position: 'relative', top: '200px' }}
-			data-bit-id="@willsgimenes/marina"
+			data-package-id="@willsgimenes/marina"
 		>
 			<h1>hover me!</h1>
 		</ComponentHighlighter>

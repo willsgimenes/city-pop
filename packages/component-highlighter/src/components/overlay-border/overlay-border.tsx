@@ -6,8 +6,8 @@ import createRef from 'react-create-ref';
 import { Instance, createPopper } from '@popperjs/core';
 
 import styles from './overlay-border.module.scss';
-import { ignorePopperSize } from '../ignore-popper-size';
-import { resizeToMatchReference } from '../resize-to-match-reference';
+import { ignorePopperSize } from '../../utils/ignore-popper-size';
+import { resizeToMatchReference } from '../../utils/resize-to-match-reference';
 
 const BASE_OFFSET = +styles.offset;
 

@@ -5,22 +5,22 @@ import { DuoComponentBubble } from './duo-component-bubble';
 import { DefaultLabel } from './default-label';
 
 export type ComponentLabelProps = {
-	bitId?: string;
+	packageId?: string;
 	versionOverride?: string;
 	fullScopeName?: boolean;
 } & HTMLAttributes<HTMLDivElement>;
 
 export function ComponentLabel(props: ComponentLabelProps) {
-	const { bitId, versionOverride, fullScopeName, className, ...rest } = props;
+	const { packageId, versionOverride, fullScopeName, className, ...rest } = props;
 
-	if (!bitId) return null;
+	if (!packageId) return null;
 
-	const parsed = bitId;
+	const parsed = packageId;
 
 	if (!parsed) {
 		return (
 			<DefaultLabel elevation="medium" className={className} {...rest}>
-				{bitId}
+				{packageId}
 			</DefaultLabel>
 		);
 	}
@@ -28,7 +28,7 @@ export function ComponentLabel(props: ComponentLabelProps) {
 	return (
 		<DuoComponentBubble
 			version={versionOverride}
-			bitId={parsed}
+			packageId={parsed}
 			elevation="medium"
 			className={classNames(className)}
 			fullScopeName={fullScopeName}

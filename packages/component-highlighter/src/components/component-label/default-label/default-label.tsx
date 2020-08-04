@@ -1,8 +1,8 @@
 import React from 'react';
 import classNames from 'classnames';
 
-import { Card, CardProps } from '../../card';
-import { pillClass } from '../../pill';
+import { Card, CardProps } from '../../../ui/card';
+import { pillClass } from '../../../ui/pill';
 
 import styles from './default-label.module.scss';
 

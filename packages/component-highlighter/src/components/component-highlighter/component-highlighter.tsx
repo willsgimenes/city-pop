@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import debounce from 'lodash.debounce';
 
 import styles from './component-highlighter.module.scss';
-import { RefTooltip } from '../ref-tooltip';
+import { RefTooltip } from '../../components/ref-tooltip';
 import { OverlayBorder } from '../overlay-border';
 import { VersionMap } from './content-type';
 
@@ -56,7 +56,7 @@ export class ComponentHighlighter extends Component<
 				return;
 			}
 
-			const value = elem.getAttribute('data-bit-id');
+			const value = elem.getAttribute('data-package-id');
 
 			if (value && blacklist.has(value)) {
 				continue;
@@ -120,7 +120,7 @@ export class ComponentHighlighter extends Component<
 					motionTracking={motionTracking}
 				>
 					<ComponentLabel
-						bitId={highlightTargetId}
+						packageId={highlightTargetId}
 						versionOverride={explicitVersion}
 						fullScopeName={fullScopeName}
 						data-ignore-component-highlight

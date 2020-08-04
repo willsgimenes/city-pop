@@ -1,7 +1,7 @@
 // @ts-ignore
 import React from 'react';
 
-import { ComponentHighlighter } from '../src/component-highlighter'
+import { ComponentHighlighter } from '../src/components/component-highlighter'
 
 export default {
   title: 'Welcome',
@@ -15,7 +15,7 @@ export const Default = () => <div>
 			versionMap={versions}
 			fullScopeName
 			style={{ width: 'fit-content', margin: 'auto', position: 'relative', top: '200px' }}
-			data-bit-id="@willsgimenes/marina"
+			data-package-id="@willsgimenes/marina"
 		>
 			<h1>hover me!</h1>
 		</ComponentHighlighter>

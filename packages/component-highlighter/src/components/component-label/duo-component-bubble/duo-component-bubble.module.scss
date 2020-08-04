@@ -1,4 +1,4 @@
-@import '../../ui/colors.module.scss';
+@import '../../../ui/colors.module.scss';
 
 .duoComponentBubble {
 	display: flex;
@@ -6,7 +6,6 @@
 	color: var(--component-highlighter-text, $w10);
 	font-size: 12px;
 
-	//reset styles from card:
 	padding: 0;
 	border: none;
 	background: none;
@@ -21,7 +20,7 @@
 	line-height: 1.68;
 
 	transition: filter 300ms;
-	transform: translateZ(0); //fix blurriness in Safari
+	transform: translateZ(0);
 
 	filter: saturate(100%) brightness(100%);
 
@@ -53,6 +52,5 @@
 }
 
 .versionPrefix {
-	//'@' looks a little big using the CircularPro font
 	font-size: 0.85em;
 }

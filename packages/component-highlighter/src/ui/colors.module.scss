@@ -1,20 +1,3 @@
-/**
- * Basic colors palette for bit.dev.  
- * Colors divide into these groups:
- * -   Primary, brand (purple)
- * -   Secondary (blue)
- * -   Complementary (pink)
- * -   Success (green)
- * -   Risk (yellow)
- * -   Danger (red)
- * -   Neutrals (gray)
- * -   Shadows
- 
- * Each color has its own shades, scaling between 0 (lightest) and 100 (darkest),  
- * e.g.: p20 (lightest purple), p30, p50 (base purple), p60 (highlight) p70 (darkest)
- */
-
-
 // purple
 $p70: #3e29df;
 $p60: #5d4aec;
@@ -59,15 +42,15 @@ $r20: #fdeff2;
 
 
 // dark
-$d70: #0c0c0c; // lucifer
-$d60: #2b2b2b; // doom
-$d50: #414141; // darkness
-$d40: #6c707c; // battleship
-$d30: #878c9a; // steel
-$d20: #babec9; // silver
-$d10: #ededed; // pearl
-$w20: #f6f6f6; // cloud
-$w10: #ffffff; // white
+$d70: #0c0c0c;
+$d60: #2b2b2b;
+$d50: #414141;
+$d40: #6c707c;
+$d30: #878c9a;
+$d20: #babec9;
+$d10: #ededed;
+$w20: #f6f6f6;
+$w10: #ffffff;
 
 $pink70: #df083e;
 $pink60: #f7174f;

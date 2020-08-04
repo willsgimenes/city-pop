@@ -1,4 +1,4 @@
-@import '../../ui/colors.module.scss';
+@import '../../../ui/colors.module.scss';
 
 .defaultLabel {
 	display: flex;
@@ -10,9 +10,8 @@
 	line-height: 1.68;
 	background: var(--scope-color-bg, $pink50);
 
-	//hover highlight:
 	transition: filter 300ms;
-	transform: translateZ(0); //fix blurriness in Safari
+	transform: translateZ(0);
 
 	filter: saturate(100%) brightness(100%);
 
@@ -20,7 +19,6 @@
 		filter: saturate(109%) brightness(109%);
 	}
 
-	//reset styles from card:
 	padding: 0 11px;
 	border: none;
 }

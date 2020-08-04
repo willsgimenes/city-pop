@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
-import { Card } from '../../card';
+import { Card } from '../../../ui/card';
 
 import scopeStyles from './scope-colors.module.scss';
 import { BASE_URL } from '../base-url';
@@ -9,13 +9,13 @@ import { DuoComponentBubbleProps, ScopeBubbleProps, ComponentBubbleProps } from 
 import styles from './duo-component-bubble.module.scss';
 
 export function DuoComponentBubble({
-	bitId,
+	packageId,
 	fullScopeName,
 	className,
 	version,
 	...rest
 }: DuoComponentBubbleProps) {
-	const scopeFullName = bitId.split('/')[0];
+	const scopeFullName = packageId.split('/')[0];
 
 	return (
 		<Card
@@ -29,18 +29,18 @@ export function DuoComponentBubble({
 			data-ignore-component-highlight
 		>
 			<ScopeBubble
-				bitId={bitId}
+				packageId={packageId}
 				fullScopeName={fullScopeName}
 				className={styles.scopeBubble}
 			/>
-			<ComponentBubble bitId={bitId} version={version} />
+			<ComponentBubble packageId={packageId} version={version} />
 		</Card>
 	);
 }
 
-function ScopeBubble({ bitId, fullScopeName, className, ...rest }: ScopeBubbleProps) {
-	const name = bitId.split('/')[0];
-	const scopeUrl = `${BASE_URL}/${bitId}`;
+function ScopeBubble({ packageId, fullScopeName, className, ...rest }: ScopeBubbleProps) {
+	const name = packageId.split('/')[0];
+	const scopeUrl = `${BASE_URL}/${packageId}`;
 
 	return (
 		<a
@@ -57,9 +57,9 @@ function ScopeBubble({ bitId, fullScopeName, className, ...rest }: ScopeBubblePr
 	);
 }
 
-function ComponentBubble({ bitId, className, version, ...rest }: ComponentBubbleProps) {
-	const fullName = bitId.split('/')[1];
-	const url = `${BASE_URL}/${bitId}`;
+function ComponentBubble({ packageId, className, version, ...rest }: ComponentBubbleProps) {
+	const fullName = packageId.split('/')[1];
+	const url = `${BASE_URL}/${packageId}`;
 	return (
 		<a
 			href={url}
