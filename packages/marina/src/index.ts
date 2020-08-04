@@ -1,5 +1,6 @@
 const QUOTES = [
-    'あきれるほどに I sing for you 伝えたい この夏が終わる前に'
+    'あきれるほどに I sing for you 伝えたい この夏が終わる前に',
+    'Hajimari no futari',
 ]
 
 export const getQuote = () => {
