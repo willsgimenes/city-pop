@@ -1,6 +1,6 @@
 {
   "name": "@willsgimenes/example",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
@@ -8,8 +8,8 @@
     "build": "parcel build index.html"
   },
   "dependencies": {
-    "react-app-polyfill": "^1.0.0",
-    "@willsgimenes/cosmo-clock-21": "^0.1.0"
+    "@willsgimenes/cosmo-clock-21": "^0.2.0",
+    "react-app-polyfill": "^1.0.0"
   },
   "alias": {
     "react": "../node_modules/react",
