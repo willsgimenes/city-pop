@@ -1,0 +1,24 @@
+@import '../../../ui/colors.module.scss';
+
+.defaultLabel {
+	display: flex;
+	align-items: center;
+
+	color: var(--component-highlighter-text, $w10);
+	font-size: 12px;
+
+	line-height: 1.68;
+	background: var(--scope-color-bg, $pink50);
+
+	transition: filter 300ms;
+	transform: translateZ(0);
+
+	filter: saturate(100%) brightness(100%);
+
+	&:hover {
+		filter: saturate(109%) brightness(109%);
+	}
+
+	padding: 0 11px;
+	border: none;
+}
