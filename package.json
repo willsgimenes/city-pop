@@ -14,7 +14,8 @@
     "test": "lerna run test",
     "build:app": "lerna run build --scope=@willsgimenes/city-pop-app --stream",
     "deploy:app": "lerna run deploy --scope=@willsgimenes/city-pop-app",
-    "build:packages": "lerna run build --ignore=@willsgimenes/city-pop-app --ignore=@willsgimenes/example --stream"
+    "build:packages": "lerna run build --ignore=@willsgimenes/city-pop-app --ignore=@willsgimenes/example --stream",
+    "deploy:preview": "lerna run build && cd app/ && yarn run deploy"
   },
   "devDependencies": {
     "lerna": "^3.22.1",
