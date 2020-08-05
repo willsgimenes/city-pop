@@ -23,10 +23,10 @@ jobs:
         with:
           node-version: 12
           registry-url: https://registry.npmjs.org/
-      - name: Link local packages
-        run: yarn lerna bootstrap --force-local
       - name: Install dependencies
         run: yarn
+      - name: Link local packages
+        run: yarn lerna bootstrap --force-local
       - name: Test packages
         run: |
           yarn lerna run test
