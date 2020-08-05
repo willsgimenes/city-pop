@@ -1,0 +1,1 @@
+export const Title = 'Shibuya design tokens';
