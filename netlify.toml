@@ -1,3 +1,0 @@
-[build]
-  command = "yarn lerna run build && next build && next export"
-  publish = "app/out"
